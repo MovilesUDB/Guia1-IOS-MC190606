@@ -41,3 +41,33 @@
 //  return mensaje
 //}
 //...........................
+//Operadores Logicos
+//func anioBisiesto(anio:Int) ->Bool{
+//  return(( (anio/4 == 0 && anio/100 != 0) || anio/400 == 0))
+//}
+//..........................
+//func interesSimple() -> Double{
+//  print("Ingrese el monto a pagar")
+//  let monto = Double(readLine(stripNewLine: true)!)
+//  print("Ingrese el interes")
+//  let interes = Double(readLine(stripNewLine: true)!)
+//  print("Ingrese el tiempo en años")
+//  let tiempo = Double(readLine(stripNewLine: true)!)
+
+//  return monto! * interes! * tiempo!
+
+  //forma de invocarlo
+  //print(interesSimple());
+//}
+//.........................
+//Funcion recursiva
+func factorial(i: Int) -> Int {
+  if i == 0{
+    return 1
+  }else if i < 0{
+    return 0
+  } else if i > 1{
+    return i * factorial(i: i - 1)
+  }
+  return i
+}
